@@ -48,9 +48,9 @@ local Player = ESX.GetPlayerData()
 ]]
 
 vRP.getPlayerData = function(sursa)
-    local user_id = vRP["getUserId"](sursa)
+    local user_id = vRP.getUserId(sursa)
     if type(sursa) ~= "number" then return end;if sursa == nil then return end
-    local userdata = {user_id = user_id, bani = vRP["getMoney"](user_id), banca = vRP["getBankMoney"](user_id), ore = vRP["getUserHoursPlayed"](user_id)}
-    local factiondata = {factiune = vRP["getUserFaction"](user_id), rank = vRP["getFactionRank"](user_id),salariu = vRP["getFactionRankSalary"](vRP["getuserFaction"](user_id), vRP["getFactionRank"](user_id)), fType = vRP["getFactionType"](vRP["getUserFaction"](user_id))}
+    local userdata = {user_id = user_id, bani = vRP.getMoney(user_id), banca = vRP.getBankMoney(user_id), ore = vRP.getUserHoursPlayed(user_id)}
+    local factiondata = {factiune = vRP.getUserFaction(user_id), rank = vRP.getFactionRank(user_id),salariu = vRP.getFactionRankSalary(vRP.getuserFaction(user_id), vRP.getFactionRank(user_id)), fType = vRP.getFactionType(vRP.getUserFaction(user_id))}
     return userdata, factiondata
 end
