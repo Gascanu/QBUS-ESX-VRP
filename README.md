@@ -5,3 +5,5 @@ In viitor se vor adauga mai multe functii, triggere si poate alte framework-uri
 
 
 In caz de am scris gresit vreo functie, contactati-ma pe discord Gascanu'#8097 sau Discord ID: 443862864512679957
+
+Verificati regulat acest fisier/link, datorita faptului ca se vor schimba/adauga lucruri des
