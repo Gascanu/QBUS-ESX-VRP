@@ -126,7 +126,7 @@ function tvRP.notify(msg,title,timeout,type) -- Functie Custom
   -- [[ Folosire ]]
 
   -- Client-Side
-  vRP.notify("mesaj") {} vRP.notify{"mesaj"} --{Depinde de caz}
+  tvRP.notify("mesaj") {} vRP.notify{"mesaj"} --{Depinde de caz}
 
   -- Server-Side
   vRPclient.notify(source,{"mesaj"})
