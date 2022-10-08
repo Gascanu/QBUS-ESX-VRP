@@ -73,7 +73,8 @@ client_scripts {
 
 -- Si se adauga aceste linii de cod in side-urile specifice
 
-local libraryGET = {["dvf"] = _ENV["module"]("vrp", "lib/Proxy"); ["rmf"] = _ENV["module"]("vrp", "lib/Tunnel")};
+local Tunnel =  module("vrp","lib/Tunnel")
+local Proxy = module("vrp","lib/Proxy")
 
 
-local vRP , vRPclient  = libraryGET["dvf"]["getInterface"]"vRP", libraryGET["rmf"]["getInterface"]("vRP", "vrp_ids");
+local vRP , vRPclient  = Proxy.getInterface("vRP"), Tunnel.getInterface("vRP", "nume script");
