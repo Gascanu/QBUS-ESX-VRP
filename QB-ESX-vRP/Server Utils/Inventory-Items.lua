@@ -67,7 +67,6 @@ end
             \/        \/       \_/                                   
 ]]--
 
---[[Self este folosti ca variabila, ea se inlocuieste cu Player-ul]]
 
 
 -- Pe ESX nu exista o functie specifica pentru verificarea daca un item poate fii folosit
