@@ -188,8 +188,8 @@ function self.removeAccountMoney(accountName, money, reason)
     end
 end
 
-function self.getAccontMoney(accountName)
-    return self.getAccount(accountName).money
+function self.getAccountMoney(accountName)
+    return self.getAccount(accountName).money or 0
 end
 
 --[[                               
