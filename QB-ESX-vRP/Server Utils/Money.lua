@@ -88,7 +88,7 @@ end
 function self.Functions.GetMoney(moneytype)
     if not moneytype then return false end
     moneytype = moneytype:lower()
-    return self.PlayerData.money[moneytype]
+    return self.PlayerData.money[moneytype] or 0
 end
 
 --[[                               
