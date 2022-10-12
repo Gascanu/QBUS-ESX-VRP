@@ -1,5 +1,3 @@
---[[Self este folosti ca variabila, ea se inlocuieste cu Player-ul]]
-
 local self = {}
 
 --[[                               
