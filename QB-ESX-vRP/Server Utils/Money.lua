@@ -188,6 +188,10 @@ function self.removeAccountMoney(accountName, money, reason)
     end
 end
 
+function self.getAccontMoney(accountName)
+    return self.getAccount(accountName).money
+end
+
 --[[                               
            ____________________ 
      ___  _\______   \______   \
