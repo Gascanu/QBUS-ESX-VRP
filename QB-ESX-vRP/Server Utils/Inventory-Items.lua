@@ -100,7 +100,7 @@ local self = {}
 
 --[[
     function self.HasItem(item)
-    return self.getInventoryItem(item).count
+    return tonumber(self.getInventoryItem(item).count) > 0
 end
 ]]--  NU stiu daca functioneaza!
 
